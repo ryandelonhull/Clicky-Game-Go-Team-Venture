@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Baron Von Underbite",
+        "image": "./public/images/baronvonunderbite.png"
+    },
+    {
+        "id": 2,
+        "name": "Brock Samson",
+        "image": "./images/brock-samson.png"
+    },
+    {
+        "id": 3,
+        "name": "David Bowie",
+        "image": "./images/davidbowie.png"
+    },
+    {
+        "id": 4,
+        "name": "Dr Venture",
+        "image": "./images/dr-venture.png"
+    },
+    {
+        "id": 5,
+        "name": "Dr Ms the Monarch",
+        "image": "./images/drmsthemonarch.png"
+    },
+    {
+        "id": 6,
+        "name": "Dr Orpheus",
+        "image": "./images/drorpheus.png"
+    },
+    {
+        "id": 7,
+        "name": "Henchman 21",
+        "image": "./images/henchman21.png"
+    },
+    {
+        "id": 8,
+        "name": "Iggy Pop",
+        "image": "./images/iggypop.png"
+    },
+    {
+        "id": 9,
+        "name": "Klaus Nomi",
+        "image": "./images/klausnomi.png"
+    },
+    {
+        "id": 10,
+        "name": "Molotov Cocktease",
+        "image": "./images/molotov.png"
+    },
+    {
+        "id": 11,
+        "name": "Mighty Monarch",
+        "image": "./images/monarch.png"
+    },
+    {
+        "id": 12,
+        "name": "Phantom Limb",
+        "image": "./images/phantomlimb.png"
+    }
+]

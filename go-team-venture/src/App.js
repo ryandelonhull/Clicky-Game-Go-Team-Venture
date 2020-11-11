@@ -1,25 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Component } from "react";
+import Header from "./components/Header";
+import Image from "./components/Image";
+import Footer from "./components/Footer";
+import characters from "./characters.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    characters: characters
+  };
+
+  removeCharacter = id => {
+    const characters = this.state.characters.filter(character => character.id !== id);
+    this.serState({ characters: characters });
+  };
+
+  render() {
+    return (
+      <div>
+        <Header/>
+        <Image/>
+        <Footer/>
+      </div>
+    );
+  }
 }
 
 export default App;
