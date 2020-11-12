@@ -1,0 +1,8 @@
+.header {
+    width: 100%;
+    padding: 60px;
+    text-align: center;
+    background-image: linear-gradient(black, red);
+    color: white;
+    font-size: 30px;
+}
