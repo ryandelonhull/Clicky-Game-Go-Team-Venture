@@ -1,9 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
 import React, { Component } from "react";
-import Header from "./components/Header";
-import Image from "./components/Image";
-import Footer from "./components/Footer";
+import './App.css';
+import Header from "./components/Header/header.js";
+import Image from "./components/Image/image.js";
+import Footer from "./components/Footer/footer.js";
 import characters from "./characters.json";
 
 class App extends Component {
@@ -13,14 +12,21 @@ class App extends Component {
 
   removeCharacter = id => {
     const characters = this.state.characters.filter(character => character.id !== id);
-    this.serState({ characters: characters });
+    this.setState({ characters: characters });
   };
 
   render() {
     return (
       <div>
         <Header/>
-        <Image/>
+        {this.state.characters.map(character => (
+          <Image
+            removeCharacter={this.removeCharacter}
+            id={character.id}
+            name={character.name}
+            image={character.image}
+          />
+        ))}
         <Footer/>
       </div>
     );
